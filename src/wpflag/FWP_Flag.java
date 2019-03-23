@@ -14,9 +14,15 @@ import java.awt.Graphics2D;
 import java.awt.geom.Line2D;
 import javax.swing.JFrame;
 
+/**
+ * West Papua Flag
+ * @author pawen
+ */
 public class FWP_Flag extends JFrame {
 
-    // Constructor
+    /**
+     * Constructor
+     */
     public FWP_Flag() {
         
         // window property
@@ -28,7 +34,10 @@ public class FWP_Flag extends JFrame {
         setVisible(true);
     }
 
-    // main method
+    /**
+     * The main method
+     * @param args 
+     */
     public static void main(String[] args) {
         new FWP_Flag();
     }
@@ -86,7 +95,15 @@ public class FWP_Flag extends JFrame {
                 
     }
 
-    // method to draw the star
+    /**
+     * Method to draw the star
+     * @param g
+     * @param ctrX
+     * @param ctrY
+     * @param radius
+     * @param nPoints
+     * @param spikiness 
+     */
     public static void fillStar(Graphics g, int ctrX, int ctrY, int radius, int nPoints, double spikiness) {
         double xDouble[] = new double[2 * nPoints];
         double yDouble[] = new double[2 * nPoints];
